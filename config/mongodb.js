@@ -5,7 +5,17 @@ const connectDB = async()=>{
 
         // Establishing connection 
 
-        await mongoose.connect(process.env.MONGODB_URI);
+        await mongoose.connect(process.env.MONGODB_URI );
+
+          console.log("Initial connection to MongoDB successful");
+  
+        //   adding delay after connection 
+
+        
+          setTimeout(() => {
+            mongoose.connection.emit("connected");
+          }, 1000);
+          
      
         //  connected event 
 
