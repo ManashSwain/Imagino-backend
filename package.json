@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "backend image generation sass app ",
   "main": "server.js",
+   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js" ,
+    "server" : "nodemon server.js"
   },
   "author": "manash",
   "license": "ISC",
