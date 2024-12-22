@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "backend image generation sass app ",
   "main": "server.js",
-   "type": "module",
+  "type": "module",
   "scripts": {
-    "start": "node server.js" ,
-    "server" : "nodemon server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "manash",
   "license": "ISC",
@@ -18,6 +18,7 @@
     "express": "^4.21.2",
     "form-data": "^4.0.1",
     "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.12.0",
     "mongoose": "^8.9.2",
     "nodemon": "^3.1.9",
     "razorpay": "^2.9.5"
